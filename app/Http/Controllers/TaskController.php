@@ -53,6 +53,7 @@ public function updateStatus($id,Request $request){
             return view('welcome',['tasks'=>Task::where('status','!=','Completed')->get(),'role'=>$admin->role]);
             
         }
+        
         // if($validator->passes()){
         //   return view('welcome');
         // }else{
